@@ -12,6 +12,12 @@ Building this image and running the container will spin up a barebones kali mach
 
 ## Running
 
+Firstly, if you're using this to connect to a TryHackMe room, set an environment variable called `OPENVPN_CONFIG_PATH` to your OpenVPN config file:
+
+```
+$ export OPENVPN_CONFIG_PATH=~/.my-open-vpn-config.ovpn
+```
+
 If you are unfamiliar with Docker, below is a set of instructions on how to get this container running on your machine:
 
 ```
