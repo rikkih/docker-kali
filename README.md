@@ -15,15 +15,15 @@ Building this image and running the container will spin up a barebones kali mach
 If you are unfamiliar with Docker, below is a set of instructions on how to get this container running on your machine:
 
 ```
-# Buld the orchestration
-1. docker-compose build
+1. Buld the orchestration
+$ docker-compose build
 
-# Run the kali container
-2. docker-compose run kali
+2. Run the kali container
+$ docker-compose run kali
 
-# You should be brought into a bash process inside the kali container:
+3. You should be brought inside a bash process within the kali container
 ┌──(kali㉿workstation)-[~]
 └─$ pwd
 /home/kali
-
 ```
+
