@@ -12,7 +12,7 @@ Building this image and running the container will spin up a barebones kali mach
 
 ## Running
 
-Firstly, if you're using this to connect to a TryHackMe room, set an environment variable called `OPENVPN_CONFIG_PATH` to your OpenVPN config file:
+Firstly, if you're using this to connect to a TryHackMe room, set an environment variable called `OPENVPN_CONFIG_PATH` to your OpenVPN config file. Secondly, create a password for sudo privileges and store this in an environment variable called `KALI_ROOT_PWD`. This is for using `openvpn`.
 
 ```
 $ export OPENVPN_CONFIG_PATH=~/.my-open-vpn-config.ovpn
