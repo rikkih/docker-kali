@@ -14,8 +14,8 @@ Building this image and running the container will spin up a barebones kali mach
 
 If you are unfamiliar with Docker, below is a set of instructions on how to get this container running on your machine:
 
-# Build the Kali image which is declared in the Dockerfile and tag (-t) the image with `kali-linux`
+\# Build the Kali image which is declared in the Dockerfile and tag (-t) the image with `kali-linux`
 1. `docker build -t kali-linux .`
 
-# Run the built image as a container
+\# Run the built image as a container
 2. TODO
