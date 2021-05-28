@@ -5,7 +5,7 @@ RUN apt-get -y update && \
 	apt-get -y autoremove && \
 	apt-get clean
 
-RUN apt-get install -y --no-install-recommends \
+RUN apt-get install -y \
 	apt-utils \
 	curl \
 	enum4linux \
@@ -19,6 +19,7 @@ RUN apt-get install -y --no-install-recommends \
 	smbmap \
 	sslscan \
 	vim \
+	--no-install-recommends
 
 RUN useradd -m -r -u 1000 -U kali
 USER kali
