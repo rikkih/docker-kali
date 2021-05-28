@@ -23,7 +23,7 @@ RUN apt-get install -y \
 	--no-install-recommends
 
 RUN useradd -m -r -u 1000 -U kali && \
-	echo "kali:${KALI_ROOT_PWD}" | chpasswd && \
+	echo kali:${KALI_ROOT_PWD:-kali} | chpasswd && \
 	adduser kali sudo
 
 USER kali
