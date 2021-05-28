@@ -22,8 +22,10 @@ RUN apt-get install -y \
 	vim \
 	--no-install-recommends
 
+ARG kali_root_pwd=kali1
+
 RUN useradd -m -r -u 1000 -U kali && \
-	echo kali:${KALI_ROOT_PWD:-kali} | chpasswd && \
+	echo kali:${kali_root_pwd} | chpasswd && \
 	adduser kali sudo
 
 USER kali
