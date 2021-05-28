@@ -18,10 +18,14 @@ RUN apt-get install -y \
 	smbclient \
 	smbmap \
 	sslscan \
+	sudo \
 	vim \
 	--no-install-recommends
 
-RUN useradd -m -r -u 1000 -U kali
+RUN useradd -m -r -u 1000 -U kali && \
+	echo "kali:${KALI_ROOT_PWD}" | chpasswd && \
+	adduser kali sudo
+
 USER kali
 WORKDIR /home/kali
 
