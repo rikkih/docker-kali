@@ -7,5 +7,5 @@ services:
     privileged: true
     volumes:
       # Mount your OpenVPN config to connect to the tryhackme network.
-      - ./freddiehd.ovpn:/tmp/freddiehd.ovpn
+      - $OPENVPN_CONFIG_PATH:/tmp/freddiehd.ovpn
 
