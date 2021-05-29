@@ -12,25 +12,25 @@ Building this image and running the container will spin up a barebones kali mach
 
 ## Running
 
-Firstly, if you're using this to connect to a TryHackMe room, set an environment variable called `OPENVPN_CONFIG_PATH` to your OpenVPN config file. Secondly, create a password for sudo privileges and store this in an environment variable called `KALI_ROOT_PWD`. This is for using `openvpn`.
+Firstly, if you're using this to connect to a TryHackMe room, set an environment variable called `OPENVPN_CONFIG_PATH` and `OPENVPN_CONFIG_FILE_NAME` to your OpenVPN config file path and config file name, respectively. Secondly, create a password for sudo privileges and store this in an environment variable called `KALI_ROOT_PWD`. This is for using `openvpn`.
 
 ```
 $ export OPENVPN_CONFIG_PATH=~/.my-open-vpn-config.ovpn
+$ export OPENVPN_CONFIG_FILE_NAME=my-open-vpn-config.ovpn
 $ export KALI_ROOT_PWD=RootPassword
 ```
 
-If you are unfamiliar with Docker, below is a set of instructions on how to get this container running on your machine:
+To get the dokcer container up and running, run the executable `run.sh`:
 
 ```
-1. Buld the orchestration
-$ docker-compose build
+# Run executable
+$ ./run.sh
 
-2. Run the kali container
-$ docker-compose run kali
-
-3. You should be brought inside a bash process within the kali container
+# You should be brought inside a bash process within the kali container in the /home/kali user directory
 ┌──(kali㉿workstation)-[~]
-└─$ pwd
-/home/kali
+└─$ 
+
+# [OPTIONAL] Configure your TryHackMe
+$ sudo openvpn <your-openvpn-file-name>.ovpn
 ```
 
