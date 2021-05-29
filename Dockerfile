@@ -19,6 +19,7 @@ RUN apt-get install -y \
 	smbmap \
 	sslscan \
 	sudo \
+	tmux \
 	vim \
 	--no-install-recommends
 

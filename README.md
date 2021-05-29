@@ -30,7 +30,7 @@ $ ./run.sh
 ┌──(kali㉿workstation)-[~]
 └─$ 
 
-# [OPTIONAL] Configure your TryHackMe
+# [OPTIONAL] Configure your TryHackMe openvpn connection. I have included tmux in the default config for multiplexing.
 $ sudo openvpn <your-openvpn-file-name>.ovpn
 ```
 
