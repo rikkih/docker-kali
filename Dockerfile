@@ -17,6 +17,7 @@ RUN apt-get install -y \
 	samba \
 	smbclient \
 	smbmap \
+	ssh \
 	sslscan \
 	sudo \
 	tmux \
