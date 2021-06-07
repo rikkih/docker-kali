@@ -13,6 +13,8 @@ RUN apt-get install -y \
 	git \
 	hydra \
 	openvpn \
+	man \
+	metasploit-framework \
 	nmap \
 	samba \
 	smbclient \
